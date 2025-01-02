@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif; /* Professional font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px 0; /* Reduced banner size */
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 160px; /* Larger size for emphasis */
+    opacity: 0.9;
+    filter: brightness(0.9) contrast(1.1); /* Blended with background */
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.banner img:hover {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+.hero-content h1 {
+    font-size: 1.8rem; /* Adjusted for better balance */
+    margin-top: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero-content .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.hero-content .btn:hover {
+    background: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 30px 0; /* Reduced section size */
+    text-align: center;
+    background: #fff;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.about p {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Projects Section */
+.projects {
+    padding: 30px 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+    padding: 30px 0; /* Reduced section size */
+    text-align: center;
+    background: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact a.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.contact a.btn:hover {
+    background: #0056b3;
+}
+
+/* LinkedIn Icon */
+.linkedin-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('linkedin.png') no-repeat center center;
+    background-size: cover;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+}
+
+.linkedin-icon:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; /* Slightly reduced size */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .contact a.btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
