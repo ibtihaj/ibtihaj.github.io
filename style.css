@@ -34,7 +34,6 @@ body {
 
 .banner img:hover {
     opacity: 1;
-    filter: brightness(1);
 }
 
 .hero-content h1 {
@@ -140,9 +139,8 @@ body {
 
 /* Project Icons */
 .project-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     margin-left: 10px;
 }
